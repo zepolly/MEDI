@@ -1,0 +1,48 @@
+.page-header {
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+    align-items: center;
+  }
+}
+
+.page-header__logo {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.page-header__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 180px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+  }
+}
+
+.page-header__link {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__link {
+    display: block;
+
+    &:focus {
+      color: @yellow;
+    }
+
+    &:hover {
+      color: @yellow;
+    }
+
+    &:active {
+      color: @orange;
+    }
+  }
+}
