@@ -1,0 +1,41 @@
+.about-me {
+  margin-top: 70px;
+}
+
+.about-me__title {
+  position: relative;
+  font-size: 36px;
+  line-height: 49px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.about-me__title::before {
+  content: "";
+  position: absolute;
+  right: 22%;
+  top: -20px;
+  background-image: url("../../img/circle-about.svg");
+  width: 64px;
+  height: 44px;
+}
+
+.about-me__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 17px;
+  background-image: url("../../img/arrow-about.svg");
+  width: 73px;
+  height: 16px;
+}
+
+.about-me__title-symbol {
+  color: @green;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.about-me__title-letter {
+  font-style: italic;
+}
