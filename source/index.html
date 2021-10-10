@@ -14,7 +14,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body class="page-body">
@@ -22,7 +22,7 @@
     <header class="page-header">
       <a href="#promo">
         <picture>
-          <source media="(min-width: 740px)" srcset="img/logo-desktop.png, img/logo-desktop@2x.png 2x">
+          <source media="(min-width: 580px)" srcset="img/logo-desktop.png, img/logo-desktop@2x.png 2x">
           <img class="page-header__logo-image" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" alt="Логотип">
         </picture>
       </a>
@@ -43,24 +43,24 @@
           <li class="main-nav__item">
             <a href="#contacts">Контакты</a>
           </li>
-          <li class="main-nav__item">
-            <a href="tel:+79999758285">+7 (999) 975-82-85</a>
+          <li class="main-nav__item main-nav__item-tel">
+            <a href="tel:+79999758285">+7(999)975-82-85</a>
           </li>
         </ul>
       </nav>
-      <a class="page-header__link" href="tel:+79999758285">+7 (999) 975-82-85</a>
+      <a class="page-header__link" href="tel:+79999758285">+7(999)975-82-85</a>
     </header>
 
-    <main>
+    <main class="page-body__main">
 
       <section class="promo" id="promo">
         <div class="promo__wrapper">
-          <p class="promo__description">&lt; Фронтенд-разработчик &frasl;&gt;</p>
+          <p class="promo__description">&lt;Фронтенд-разработчик&frasl;&gt;</p>
           <h1 class="promo__title"><span class="promo__title-letter">Я</span>на Новикова</h1>
           <a class="promo__link" href="https://wa.me/79999758285">Связаться</a>
         </div>
         <picture>
-          <source media="(min-width: 720px)" srcset="img/yana-desktop.png, img/yana-desktop@2x.png 2x">
+          <source media="(min-width: 580px)" srcset="img/yana-desktop.png, img/yana-desktop@2x.png 2x">
           <img class="promo__img" src="img/yana-mobile.png" srcset="img/yana-mobile@2x.png 2x" alt="Яна Новикова">
         </picture>
         <ul class="promo__list">
@@ -112,7 +112,7 @@
       </section>
 
       <section class="about-me" id="about-me">
-        <h2 class="about-me__title"><span class="about-me__title-symbol">&lt;&#33;&minus;&minus;</span> Обо <span class="about-me__title-letter">мне</span></h2>
+        <h2 class="about-me__title"><span class="about-me__title-symbol">&lt;&#33;&minus;&minus;</span>Обо <span class="about-me__title-letter">мне</span></h2>
         <div class="education">
           <div class="education__wrap">
             <h3 class="education__title">Образование</h3>
@@ -140,10 +140,18 @@
               <img class="education__img" src="img/russian-three.png" alt="Русская версия сертификата">
             </li>
           </ul>
+          <div class="education__buttons">
+            <button class="education__button education__button-back" type="button">
+              <span class="visually-hidden">назад</span>
+            </button>
+            <button class="education__button education__button-forward" type="button">
+              <span class="visually-hidden">вперед</span>
+            </button>
+          </div>
         </div>
-        <div>
-          <h3>Скиллы &amp; Языки</h3>
-          <ul>
+        <div class="skills">
+          <h3 class="skills__title">Скиллы &amp; Языки</h3>
+          <ul class="skills__list skills__list-one">
             <li>GitHub</li>
             <li>БЭМ</li>
             <li>Адаптив</li>
@@ -152,145 +160,151 @@
             <li>Figma</li>
             <li>Adobe Photoshop</li>
           </ul>
-          <ul>
+          <ul class="skills__list skills__list-two">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
         </div>
-        <span>&minus;&minus;&gt;</span>
+        <span class="about-me__title-symbol about-me__title-symbol-end">&minus;&minus;&gt;</span>
       </section>
 
       <section class="projects" id="projects">
-        <h2 class="projects__title">Проекты</h2>
+        <h2 class="projects__title"><span class="projects__title-letter">П</span>роекты</h2>
         <ul class="projects__list">
           <li class="projects__item">
             <a href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/combo-first-desktop.png, img/combo-first-desktop@2x.png 2x">
-                <source media="(min-width: 720px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
-                <img class="innovations__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="Big Ben Комбо">
+                <source media="(min-width: 580px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
+                <img class="projects__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="проект-космитология">
               </picture>
             </a>
           </li>
           <li class="projects__item">
             <a href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/combo-first-desktop.png, img/combo-first-desktop@2x.png 2x">
-                <source media="(min-width: 720px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
-                <img class="innovations__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="Big Ben Комбо">
+                <source media="(min-width: 580px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
+                <img class="projects__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="проект-кот">
               </picture>
             </a>
           </li>
           <li class="projects__item">
             <a href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/combo-first-desktop.png, img/combo-first-desktop@2x.png 2x">
-                <source media="(min-width: 720px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
-                <img class="innovations__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="Big Ben Комбо">
+                <source media="(min-width: 580px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
+                <img class="projects__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="проект-бургер">
               </picture>
             </a>
           </li>
           <li class="projects__item">
             <a href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/combo-first-desktop.png, img/combo-first-desktop@2x.png 2x">
-                <source media="(min-width: 720px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
-                <img class="innovations__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="Big Ben Комбо">
+                <source media="(min-width: 580px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
+                <img class="projects__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="проект-мастерская">
               </picture>
             </a>
           </li>
           <li class="projects__item">
             <a href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/combo-first-desktop.png, img/combo-first-desktop@2x.png 2x">
-                <source media="(min-width: 720px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
-                <img class="innovations__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="Big Ben Комбо">
+                <source media="(min-width: 580px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
+                <img class="projects__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="проект-седона">
               </picture>
             </a>
           </li>
           <li class="projects__item">
             <a href="">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/combo-first-desktop.png, img/combo-first-desktop@2x.png 2x">
-                <source media="(min-width: 720px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
-                <img class="innovations__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="Big Ben Комбо">
+                <source media="(min-width: 580px)" srcset="img/combo-first-tablet.png, img/combo-first-tablet@2x.png 2x">
+                <img class="projects__img" src="img/combo-first-mobile.png" srcset="img/combo-first-mobile@2x.png 2x" alt="проект-яндекс">
               </picture>
             </a>
           </li>
         </ul>
-        <p>Coming soon...</p>
+        <p class="projects__subtitle">C o m i n g&emsp;s o o n...</p>
       </section>
 
       <section class="contacts" id="contacts">
-        <h2 class="news__title">Контакты</h2>
-        <div>
-          <a href="tel:+79999758285">+7 (999) 975-82-85</a>
+        <h2 class="contacts__title"><span class="contacts__title-letter">К</span>онтакты</h2>
+        <div class="contacts__wrap">
+          <a href="tel:+79999758285">+7(999)975-82-85</a>
           <a href="mailto:zepolly@yandex.ru">zepolly@yandex.ru</a>
-          <p>г. Москва</p>
+          <p class="contacts__address">г. Москва</p>
         </div>
-        <div>
-          <a href="">написать мне</a>
-        </div>
+        <a class="contacts__link" href="https://wa.me/79999758285">написать</a>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <div>
-        <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <a>Главная</a>
-          </li>
-          <li class="page-footer__item">
-            <a href="#about-me">Обо мне</a>
-          </li>
-          <li class="page-footer__item">
-            <a href="#projects">Проекты</a>
-          </li>
-          <li class="page-footer__item">
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="https://t.me/Zepolly">
-              <span class="visually-hidden">телеграмм</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/zepolly">
-              <span class="visually-hidden">гитхаб</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/zepoly">
-              <span class="visually-hidden">инстаграмм</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/79999758285">
-              <span class="visually-hidden">вотсап</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="visually-hidden">фейсбук</span>
-            </a>
-          </li>
-        </ul>
-        <div>
-          <a href="">NOVIKOVA Y.</a>
-          <a class="page-footer__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-desktop.png, img/logo-desktop@2x.png 2x">
-              <img class="page-header__logo-image" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" alt="Логотип ресторана">
-            </picture>
+      <ul class="page-footer__list page-footer__list-nav">
+        <li class="page-footer__item">
+          <a>Главная</a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#about-me">Обо мне</a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#projects">Проекты</a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <ul class="page-footer__list page-footer__list-icon">
+        <li class="page-footer__item">
+          <a href="https://t.me/Zepolly">
+            <span class="visually-hidden">телеграмм</span>
+            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.6133 1.48343C24.3079 1.10997 23.8505 0.904358 23.3252 0.904358C23.0397 0.904358 22.7372 0.964439 22.4263 1.08327L1.26426 9.16146C0.141214 9.59004 -0.0100392 10.2332 -0.000311715 10.5784C0.00941575 10.9237 0.196908 11.5573 1.34246 11.9218C1.34933 11.9239 1.35619 11.926 1.36306 11.9279L5.75263 13.1841L8.12652 19.9723C8.4502 20.8978 9.17671 21.4726 10.0228 21.4726C10.5563 21.4726 11.081 21.2491 11.5403 20.8264L14.2554 18.3265L18.1935 21.4974C18.1939 21.4978 18.1945 21.498 18.1948 21.4984L18.2322 21.5285C18.2357 21.5312 18.2393 21.534 18.2427 21.5367C18.6805 21.8762 19.1582 22.0555 19.625 22.0557H19.6252C20.5371 22.0557 21.2632 21.3807 21.4747 20.3362L24.9421 3.21511C25.0813 2.52789 24.9646 1.91296 24.6133 1.48343ZM7.2211 12.9454L15.6899 8.61901L10.4167 14.2222C10.3303 14.314 10.269 14.4263 10.2389 14.5486L9.2221 18.6673L7.2211 12.9454ZM10.5479 19.7488C10.5128 19.781 10.4775 19.8098 10.4422 19.8363L11.3856 16.0155L13.1016 17.3974L10.5479 19.7488ZM23.5064 2.92424L20.0391 20.0456C20.0057 20.2094 19.8991 20.5907 19.625 20.5907C19.4895 20.5907 19.3194 20.5169 19.1453 20.3828L14.6828 16.7897C14.6823 16.7891 14.6815 16.7886 14.6807 16.7882L12.0255 14.65L19.6513 6.54706C19.8954 6.28766 19.9176 5.89036 19.7037 5.6054C19.4897 5.32044 19.102 5.2308 18.7848 5.39292L6.24244 11.8005L1.79317 10.5275L22.9487 2.45179C23.1274 2.38351 23.2522 2.3692 23.3252 2.3692C23.37 2.3692 23.4498 2.37454 23.4793 2.41097C23.5182 2.45847 23.5678 2.6204 23.5064 2.92424Z" fill="rgba(51, 51, 51, 1)"/>
+            </svg>
           </a>
-        </div>
+        </li>
+        <li class="page-footer__item">
+          <a href="https://github.com/zepolly">
+            <span class="visually-hidden">гитхаб</span>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.4984 0.260208C5.59688 0.260208 0 5.87896 0 12.8102C0 18.354 3.58125 23.0571 8.55 24.718C9.175 24.8336 9.40312 24.4461 9.40312 24.1133C9.40312 23.8149 9.39219 23.0258 9.38594 21.979C5.90938 22.7368 5.175 20.2961 5.175 20.2961C4.60781 18.8461 3.7875 18.4602 3.7875 18.4602C2.65156 17.6821 3.87187 17.6977 3.87187 17.6977C5.12656 17.7868 5.78594 18.9915 5.78594 18.9915C6.90156 20.9086 8.7125 20.3555 9.425 20.0336C9.5375 19.2227 9.86094 18.6696 10.2188 18.3555C7.44375 18.0383 4.525 16.9618 4.525 12.154C4.525 10.7836 5.0125 9.66333 5.8125 8.78521C5.68281 8.46802 5.25469 7.19146 5.93438 5.46489C5.93438 5.46489 6.98438 5.1274 9.37187 6.75083C10.3688 6.47271 11.4375 6.33365 12.5016 6.32896C13.5625 6.33521 14.6328 6.47271 15.6312 6.7524C18.0172 5.12896 19.0656 5.46646 19.0656 5.46646C19.7469 7.19458 19.3187 8.46958 19.1906 8.78677C19.9922 9.6649 20.475 10.7852 20.475 12.1555C20.475 16.9758 17.5531 18.0368 14.7687 18.3477C15.2172 18.7352 15.6172 19.5008 15.6172 20.6711C15.6172 22.3493 15.6016 23.7024 15.6016 24.1133C15.6016 24.4493 15.8266 24.8399 16.4609 24.7165C21.4219 23.054 25 18.3524 25 12.8102C25 5.87896 19.4031 0.260208 12.4984 0.260208Z" fill="rgba(51, 51, 51, 1)"/>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="https://www.instagram.com/zepoly">
+            <span class="visually-hidden">инстаграмм</span>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.2327 0H6.76726C3.03573 0 0 3.03573 0 6.76726V18.2329C0 21.9642 3.03573 25 6.76726 25H18.2329C21.9642 25 25 21.9642 25 18.2329V6.76726C25 3.03573 21.9642 0 18.2327 0V0ZM23.5344 18.2329C23.5344 21.1561 21.1561 23.5344 18.2327 23.5344H6.76726C3.84387 23.5344 1.4656 21.1561 1.4656 18.2329V6.76726C1.4656 3.84387 3.84387 1.4656 6.76726 1.4656H18.2329C21.1561 1.4656 23.5344 3.84387 23.5344 6.76726V18.2329Z" fill="rgba(51, 51, 51, 1)"/>
+              <path d="M12.5 5.66425C8.73074 5.66425 5.66431 8.73068 5.66431 12.5C5.66431 16.2693 8.73074 19.3357 12.5 19.3357C16.2693 19.3357 19.3358 16.2693 19.3358 12.5C19.3358 8.73068 16.2693 5.66425 12.5 5.66425ZM12.5 17.8701C9.53908 17.8701 7.12991 15.4611 7.12991 12.5C7.12991 9.53902 9.53908 7.12985 12.5 7.12985C15.4612 7.12985 17.8702 9.53902 17.8702 12.5C17.8702 15.4611 15.4612 17.8701 12.5 17.8701Z" fill="rgba(51, 51, 51, 1)"/>
+              <path d="M19.4991 3.23657C18.3852 3.23657 17.4792 4.14275 17.4792 5.25645C17.4792 6.37034 18.3852 7.27652 19.4991 7.27652C20.613 7.27652 21.5192 6.37034 21.5192 5.25645C21.5192 4.14256 20.613 3.23657 19.4991 3.23657ZM19.4991 5.81073C19.1936 5.81073 18.9449 5.56201 18.9449 5.25645C18.9449 4.9507 19.1936 4.70218 19.4991 4.70218C19.8049 4.70218 20.0536 4.9507 20.0536 5.25645C20.0536 5.56201 19.8049 5.81073 19.4991 5.81073Z" fill="rgba(51, 51, 51, 1)"/>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="https://wa.me/79999758285">
+            <span class="visually-hidden">вотсап</span>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5 0C5.60721 0 0 5.60721 0 12.5C0 14.8514 0.653365 17.1341 1.89279 19.1163C1.39904 20.8462 0.507212 24.1183 0.497596 24.1524C0.451442 24.3216 0.500961 24.5024 0.627404 24.624C0.753846 24.7457 0.936538 24.7889 1.10288 24.738L6.05769 23.2139C7.99856 24.3832 10.2212 25 12.5 25C19.3928 25 25 19.3928 25 12.5C25 5.60721 19.3928 0 12.5 0ZM12.5 24.0385C10.3274 24.0385 8.21106 23.4312 6.37933 22.2832C6.30192 22.2346 6.21298 22.2101 6.12404 22.2101C6.07644 22.2101 6.02885 22.2173 5.98269 22.2313L1.65625 23.563C1.97404 22.4029 2.54519 20.3279 2.87644 19.1736C2.9149 19.0399 2.89327 18.8957 2.81779 18.7788C1.60337 16.9101 0.961538 14.7389 0.961538 12.5C0.961538 6.13798 6.13798 0.961538 12.5 0.961538C18.862 0.961538 24.0385 6.13798 24.0385 12.5C24.0385 18.862 18.862 24.0385 12.5 24.0385Z" fill="rgba(51, 51, 51, 1)"/>
+              <path d="M20.6658 15.4452C19.7783 14.9524 19.0225 14.4582 18.4711 14.0976C18.0499 13.8226 17.7456 13.624 17.5225 13.512C16.8989 13.201 16.4263 13.4207 16.2465 13.6024C16.2239 13.625 16.2037 13.6495 16.1864 13.6755C15.5388 14.6471 14.6932 15.5764 14.4456 15.6264C14.1595 15.5817 12.8206 14.8207 11.4898 13.7125C10.1311 12.5803 9.27634 11.4962 9.15086 10.7577C10.0225 9.86058 10.3364 9.29616 10.3364 8.65385C10.3364 7.99183 8.79221 5.22789 8.51288 4.94856C8.23259 4.66876 7.60134 4.62501 6.63644 4.81731C6.54365 4.83606 6.45807 4.88174 6.39076 4.94856C6.27394 5.06539 3.54028 7.85241 4.83932 11.2303C6.26528 14.9375 9.92538 19.2466 14.5917 19.9466C15.122 20.026 15.6191 20.0654 16.0845 20.0654C18.8297 20.0654 20.4499 18.6841 20.9061 15.9442C20.9403 15.7438 20.8436 15.5438 20.6658 15.4452ZM14.7345 18.9957C9.7999 18.2558 6.69173 13.3668 5.73692 10.8851C4.7898 8.42356 6.53644 6.22885 6.9749 5.7327C7.33163 5.67212 7.70711 5.64664 7.86384 5.67116C8.19125 6.12645 9.3249 8.26827 9.3749 8.65385C9.3749 8.90626 9.29269 9.2577 8.31384 10.237C8.22346 10.3269 8.17298 10.449 8.17298 10.5769C8.17298 13.0942 13.4826 16.5865 14.423 16.5865C15.2408 16.5865 16.3071 15.212 16.9143 14.3164C16.9494 14.3178 17.0086 14.3298 17.0927 14.3721C17.2658 14.4591 17.5658 14.6548 17.9451 14.9029C18.4461 15.2303 19.1114 15.6649 19.897 16.1154C19.5403 17.8317 18.5432 19.5678 14.7345 18.9957Z" fill="rgba(51, 51, 51, 1)"/>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="">
+            <span class="visually-hidden">фейсбук</span>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9167 0H2.08335C0.91665 0 0 0.91665 0 2.08335V22.9167C0 24.0834 0.91665 25 2.08335 25H11.6667H16.6667H22.9167C24.0834 25 25 24.0833 25 22.9167V2.08335C25 0.91665 24.0833 0 22.9167 0ZM12.5 24.1667V15.8333H9.16665V12.5H12.5V9.58335C12.5 7.20835 14.3334 5.20835 16.6667 5H20.4167V8.33335H17.0833C16.375 8.33335 15.8333 8.875 15.8333 9.58335V12.5H20V15.8333H15.8333V24.1667H12.5V24.1667ZM24.1667 22.9167C24.1667 23.625 23.625 24.1667 22.9167 24.1667H16.6667V16.6667H20.8333V11.6667H16.6667V9.5833C16.6667 9.3333 16.8333 9.16665 17.0833 9.16665H21.25V4.16665H16.625C13.8334 4.41665 11.6667 6.79165 11.6667 9.5833V11.6667H8.3333V16.6667H11.6667V24.1667H2.08335C1.375 24.1667 0.83335 23.625 0.83335 22.9167V2.08335C0.83335 1.375 1.375 0.83335 2.08335 0.83335H22.9167C23.625 0.83335 24.1667 1.375 24.1667 2.08335V22.9167H24.1667Z" fill="rgba(51, 51, 51, 1)"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__wrap">
+        <a class="page-footer__logo">
+          <picture>
+            <source media="(min-width: 580px)" srcset="img/logo-desktop.png, img/logo-desktop@2x.png 2x">
+            <img class="page-header__logo-image" src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" alt="Логотип ресторана">
+          </picture>
+        </a>
       </div>
-      <button></button>
-      <p>© Novikova Y. 2021. Все права защищены</p>
+      <p class="page-footer__subtitle">&copy; Novikova Y. 2021. Все права защищены</p>
     </footer>
 
     <script type="text/javascript">

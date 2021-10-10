@@ -1,0 +1,85 @@
+.contacts {
+  margin-top: 90px;
+  position: relative;
+  min-height: 340px;
+}
+
+.contacts__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+}
+
+.contacts__title-letter {
+  font-style: italic;
+}
+
+.contacts__title::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  background-image: url("../../img/arrow-about.svg");
+  width: 73px;
+  height: 16px;
+}
+
+.contacts__title::before {
+  content: "";
+  position: absolute;
+  left: 145px;
+  top: 19px;
+  background-image: url("../../img/frame-contacts.svg");
+  background-size: contain;
+  width: 32px;
+  height: 19px;
+}
+
+.contacts__wrap {
+  font-size: 18px;
+  position: relative;
+}
+
+.contacts__wrap::before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  background-image: url("../../img/circle-contacts.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 67px;
+}
+
+.contacts__address {
+  margin-top: 7px;
+}
+
+.contacts__link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  color: @black;
+  background-color: @green;
+  width: 100%;
+  border-radius: 40px;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contacts__link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  background-image: url("../../img/aliens.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 286px;
+  height: 58px;
+}

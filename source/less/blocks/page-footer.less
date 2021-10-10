@@ -1,3 +1,68 @@
 .page-footer {
+  padding: 20px 20px 0 20px;
+  background-color: @green;
+  color: @black;
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas: "A B" "C C";
+}
+
+.page-footer__wrap {
+  display: none;
+}
+
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__list-nav {
+  grid-area: A;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+.page-footer__list-icon {
+  position: relative;
+  grid-area: B;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+
+  :hover {
+    path {
+      fill: @white;
+    }
+  }
+
+  :focus {
+    path {
+      fill: @white;
+    }
+  }
+
+  :active {
+    path {
+      fill: @grey-dark;
+    }
+  }
+}
+
+.page-footer__list-icon::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  background-image: url("../../img/circle-footer.svg");
+  background-repeat: no-repeat;
+  width: 93px;
+  height: 94px;
+}
+
+.page-footer__subtitle {
+  grid-area: C;
+  font-size: 12px;
   text-align: center;
+  border-top: 1px solid @black;
+  padding-top: 15px;
 }

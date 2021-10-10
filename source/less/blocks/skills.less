@@ -1,0 +1,48 @@
+.skills {
+  margin-top: 20px;
+  padding-left: 44px;
+}
+
+.skills__title {
+  font-size: 24px;
+  line-height: 33px;
+  color: @green;
+}
+
+.skills__list {
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.skills__list-one,
+.skills__list-two {
+  position: relative;
+}
+
+.skills__list-two {
+  margin-top: 25px;
+}
+
+.skills__list-one::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 0;
+  background-image: url("../../img/mechanism.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.skills__list-two::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 5px;
+  background-image: url("../../img/html.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}

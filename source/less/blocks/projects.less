@@ -1,0 +1,76 @@
+.projects {
+  margin-top: 70px;
+}
+
+.projects__title {
+  text-transform: uppercase;
+  text-align: end;
+  position: relative;
+  z-index: 2;
+  font-weight: 300;
+}
+
+.projects__title-letter {
+  font-style: italic;
+}
+
+.projects__title::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 7px;
+  background-image: url("../../img/arrow-about.svg");
+  width: 73px;
+  height: 16px;
+  transform: rotate(180deg);
+}
+
+.projects__title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  background-image: url("../../img/circle-projects.svg");
+  width: 23px;
+  height: 23px;
+}
+
+.projects__list::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: 30px;
+  background-image: url("../../img/circle-projects-two.svg");
+  width: 123px;
+  height: 145px;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.projects__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.projects__item {
+  position: relative;
+  z-index: 3;
+}
+
+.projects__img {
+  background-color: @white;
+  cursor: pointer;
+}
+
+.projects__subtitle {
+  font-size: 13px;
+  line-height: 18px;
+  color: @green;
+  text-align: center;
+  font-weight: 100;
+}
