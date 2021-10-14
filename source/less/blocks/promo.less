@@ -1,12 +1,41 @@
 .promo {
   text-align: center;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 80px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid @grey;
+  }
+}
+
+.promo__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .promo__description {
+    width: 174px;
+  }
 }
 
 .promo__description {
-  width: 174px;
   color: @grey;
   margin: 20px auto 0 auto;
+
+  @media (min-width: @desktop-width) {
+    font-size: 40px;
+    line-height: 65px;
+  }
 }
 
 .promo__title {
@@ -14,6 +43,11 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 49px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 64px;
+    line-height: 87px;
+  }
 }
 
 .promo__title-letter {
@@ -22,6 +56,10 @@
 
 .promo__img {
   margin-bottom: 80px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -50px;
+  }
 }
 
 .promo__link {
@@ -36,10 +74,22 @@
   width: 100%;
   border-radius: 40px;
   padding: 15px 0 15px 0;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    bottom: 0;
+    padding: 20px 120px 20px 120px;
+  }
 }
 
 .promo__mail {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .promo__list {
@@ -64,5 +114,9 @@
     path {
       fill: @white;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
   }
 }

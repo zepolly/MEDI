@@ -1,5 +1,9 @@
 .about-me {
   margin-top: 70px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 120px;
+  }
 }
 
 .about-me__title {
@@ -9,6 +13,11 @@
   text-transform: uppercase;
   z-index: 2;
   font-weight: 300;
+
+  @media (min-width: @desktop-width) {
+    font-size: 96px;
+    line-height: 130px;
+  }
 }
 
 .about-me__title::before {
@@ -16,9 +25,17 @@
   position: absolute;
   right: 20%;
   top: -26px;
-  background-image: url("../../img/circle-about.svg");
+  background-image: url("../img/circle-about.svg");
   width: 64px;
   height: 44px;
+
+  @media (min-width: @desktop-width) {
+    width: 176px;
+    height: 124px;
+    background-size: contain;
+    right: 37%;
+    top: -40px;
+  }
 }
 
 .about-me__title::after {
@@ -26,15 +43,27 @@
   position: absolute;
   right: 0;
   top: 17px;
-  background-image: url("../../img/arrow-about.svg");
+  background-image: url("../img/arrow-about.svg");
   width: 73px;
   height: 16px;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/arrow-desktop.svg");
+    width: 400px;
+    height: 16px;
+    top: 60px;
+  }
 }
 
 .about-me__title-symbol {
   color: @green;
   font-size: 19px;
   line-height: 33px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 96px;
+    line-height: 130px;
+  }
 }
 
 .about-me__title-symbol-end {

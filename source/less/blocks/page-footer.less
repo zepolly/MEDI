@@ -1,14 +1,37 @@
 .page-footer {
-  padding: 20px 20px 0 20px;
-  background-color: @green;
-  color: @black;
   margin-top: 50px;
+  background-color: @green;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 100px;
+  }
+}
+
+.page-footer__container {
+  padding: 20px 20px 0 20px;
+  color: @black;
   display: grid;
   grid-template-areas: "A B" "C C";
+
+  @media (min-width: @desktop-width) {
+    padding: 40px 120px 0 120px;
+    grid-template-areas: "A B D" "C C C";
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__wrap {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    grid-area: D;
+    text-align: right;
+    margin-top: 27px;
+  }
 }
 
 .page-footer__list {
@@ -20,6 +43,11 @@
   grid-area: A;
   font-size: 14px;
   line-height: 35px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 35px;
+  }
 }
 
 .page-footer__list-icon {
@@ -46,6 +74,10 @@
       fill: @grey-dark;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+  }
 }
 
 .page-footer__list-icon::before {
@@ -53,10 +85,28 @@
   position: absolute;
   left: 40px;
   top: 40px;
-  background-image: url("../../img/circle-footer.svg");
+  background-image: url("../img/circle-footer.svg");
   background-repeat: no-repeat;
   width: 93px;
   height: 94px;
+
+  @media (min-width: @desktop-width) {
+    top: -30px;
+    left: -140px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__list-icon::after {
+    content: "";
+    position: absolute;
+    right: -140px;
+    top: -30px;
+    background-image: url("../img/circle-footer.svg");
+    background-repeat: no-repeat;
+    width: 93px;
+    height: 94px;
+  }
 }
 
 .page-footer__subtitle {
@@ -65,4 +115,18 @@
   text-align: center;
   border-top: 1px solid @black;
   padding-top: 15px;
+}
+
+.page-footer__link-up {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 49.5%;
+    bottom: 80px;
+    width: 16px;
+    height: 39px;
+  }
 }
