@@ -1,7 +1,7 @@
 {
-  "name": "medi",
+  "name": "zepolly",
   "private": true,
-  "description": "Сайт косметологических услуг",
+  "description": "Сайт визитка Новиковой Яны",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
@@ -37,7 +37,6 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/less/**/*.less"
   ],

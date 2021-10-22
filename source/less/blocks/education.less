@@ -84,7 +84,12 @@
 }
 
 .education__buttons {
-  text-align: center;
+  margin-left: 95px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 .education__button {
@@ -97,7 +102,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    right: -35px;
+    right: -55px;
     bottom: 45%;
     width: 40px;
     height: 40px;
