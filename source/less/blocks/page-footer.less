@@ -128,5 +128,29 @@
     bottom: 80px;
     width: 16px;
     height: 39px;
+
+    :hover {
+      path {
+        fill: @white;
+      }
+    }
+
+    :focus {
+      path {
+        fill: @white;
+      }
+    }
+
+    :active {
+      path {
+        fill: @white;
+      }
+    }
   }
+}
+
+.page-footer__item:focus,
+.page-footer__item:hover,
+.page-footer__item:active {
+  color: @white;
 }
